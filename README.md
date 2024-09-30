@@ -1,15 +1,27 @@
-Breast cancer detection using Machine Learning
+                                                                  Breast Cancer Prediction using Machine Learning 
+This repository contains a machine learning project that uses the Random Forest Classifier to predict breast cancer diagnosis based on features extracted from breast tissue. The dataset used is the Breast Cancer Data.
 
-Frontend:
-User uploads an image.
-The image is displayed in a preview, and the "Analyze Image" button becomes clickable.
-On clicking the button, the frontend makes a request to the Flask API for analysis.
 
-Backend:
-Flask receives the image and processes it to extract features.
-The features are fed into the pre-trained Logistic Regression model.
-The model returns a result (either "cancer detected" or "no cancer detected") with a confidence score.
-Flask sends this result back to the frontend.
+Key Points:
+Random Forest Model Training: The model is trained on the dataset and saved in memory when the Flask app runs.
+Form Data Handling: The predict function collects the form inputs, scales them, and predicts whether the tumor is malignant or benign.
+Prediction Output: The result is displayed on a separate page (e.g., result.html) with the prediction and confidence score.
 
-Result Display:
-The frontend receives the result and displays it to the user (either a green success message for no cancer or a red warning for potential cancer)
+
+
+File Structure: 
+├── templates
+│   ├── index.html             # Web Interface
+│   ├── tumor.html             # Tumor explanation section
+│   ├── footer.html            # Footer template
+│   └── copyrights.html        # Copyrights section
+├── static
+│   └── style.css              # Custom styles for the web interface
+├── app.py                     # Flask backend
+├── Breast Cancer Data.csv      # Dataset
+├── random_forest.py            # Model training and prediction logic
+└── README.md                  # Project documentation
+
+
+
+
