@@ -1,4 +1,5 @@
-                                                                  Breast Cancer Prediction using Machine Learning 
+Breast Cancer Prediction using Machine Learning
+
 This repository contains a machine learning project that uses the Random Forest Classifier to predict breast cancer diagnosis based on features extracted from breast tissue. The dataset used is the Breast Cancer Data.
 
 
